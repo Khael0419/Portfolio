@@ -1,0 +1,159 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Michael Dela Cruz | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(270deg, #1e3a8a, #9333ea, #2563eb);
+      background-size: 600% 600%;
+      animation: gradientMove 15s ease infinite;
+    }
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .btn-animate { transition: all 0.3s ease; }
+    .btn-animate:hover {
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .card-hover { transition: all 0.3s ease; display: flex; flex-direction: column; }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+    .img-box {
+      height: 180px;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="text-gray-100 font-sans">
+
+  <!-- Hero Section -->
+  <section class="text-white py-20 bg-black/40">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-bold">John Michael Dela Cruz</h1>
+      <p class="mt-4 text-xl">Web & Mobile Developer | UI/UX Designer | Data Analyst</p>
+      <a href="#contact" class="btn-animate mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition">Let’s Work Together</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 container mx-auto px-6 bg-black/30 rounded-lg backdrop-blur">
+    <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
+    <p class="max-w-3xl mx-auto text-lg text-center">
+      Hi, I’m John Michael M. Dela Cruz! I’m passionate about creating user-friendly digital experiences that make technology accessible to everyone. 
+      I specialize in mobile and web development with a strong focus on UI/UX design. I also have experience in data analysis using Excel and Power BI.
+    </p>
+  </section>
+
+  <!-- Design Focus Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10 text-center">Design Focus</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="p-6 bg-white/10 rounded-lg shadow card-hover">
+          <div class="img-box">
+            <img src="./assets/user.webp" alt="User Research">
+          </div>
+          <h3 class="font-bold text-xl mb-2">User Research</h3>
+          <p>Use surveys, interviews, and testing to guide design decisions based on real user needs.</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-lg shadow card-hover">
+          <div class="img-box">
+            <img src="./assets/interaction design.webp" alt="Interaction Design">
+          </div>
+          <h3 class="font-bold text-xl mb-2">Interaction Design</h3>
+          <p>Build intuitive navigation and seamless user flows for better usability.</p>
+        </div>
+        <div class="p-6 bg-white/10 rounded-lg shadow card-hover">
+          <div class="img-box">
+            <img src="./assets/top-view-man-working-desk_23-2149930935(1).jpg" alt="Visual Design">
+          </div>
+          <h3 class="font-bold text-xl mb-2">Visual Design</h3>
+          <p>Design clean, modern interfaces with strong attention to layout, color, and typography.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white/10 shadow rounded-lg card-hover">
+        <div class="img-box">
+          <img src="assets/enviro.png" alt="EnviroQuest">
+        </div>
+        <h3 class="font-bold text-xl mb-2">EnviroQuest</h3>
+        <p>A trivia-based learning platform for environmental science students, blending gamification and education.</p>
+      </div>
+      <div class="p-6 bg-white/10 shadow rounded-lg card-hover">
+        <div class="img-box">
+          <img src="./assets/Witch Slot Machine_John Michael.png" alt="Visual Studio Coding">
+        </div>
+        <h3 class="font-bold text-xl mb-2">Witch Slot Machine</h3>
+        <p>Applications built using React Native, Node.js, and MySQL with focus on UI/UX and backend integration.</p>
+      </div>
+      <div class="p-6 bg-white/10 shadow rounded-lg card-hover">
+        <div class="img-box">
+          <img src="assets/sales.png" alt="Excel & Power BI">
+        </div>
+        <h3 class="font-bold text-xl mb-2">Excel & Power BI</h3>
+        <p>Dashboards and insights created from complex datasets, turning raw data into actionable intelligence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="py-16 bg-black/30 backdrop-blur">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10 text-center">Coding & Development Expertise</h2>
+      <p class="max-w-4xl mx-auto text-center mb-6">
+        I build scalable applications using JavaScript, CSS, React Native, Node.js, MySQL, Dart, and C++. I also leverage Excel & Power BI for analytics.
+      </p>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <span class="px-4 py-2 bg-white/10 rounded-lg shadow card-hover">JavaScript</span>
+        <span class="px-4 py-2 bg-white/10 rounded-lg shadow card-hover">React Native</span>
+        <span class="px-4 py-2 bg-white/10 rounded-lg shadow card-hover">Node.js</span>
+        <span class="px-4 py-2 bg-white/10 rounded-lg shadow card-hover">MySQL</span>
+        <span class="px-4 py-2 bg-white/10 rounded-lg shadow card-hover">C++</span>
+        <span class="px-4 py-2 bg-white/10 rounded-lg shadow card-hover">Dart</span>
+        <span class="px-4 py-2 bg-white/10 rounded-lg shadow card-hover">Excel</span>
+        <span class="px-4 py-2 bg-white/10 rounded-lg shadow card-hover">Power BI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Let’s Work Together</h2>
+    <p class="mb-4">Feel free to reach out through any of the methods below:</p>
+    <p class="font-semibold">📞 0945 211 1552</p>
+    <p class="font-semibold">✉️ <a href="mailto:nekosen002@gmail.com" class="text-yellow-400 hover:underline">nekosen002@gmail.com</a></p>
+    <p class="font-semibold">Social: <a href="mailto:Jmdelacruz181@yahoo.com" class="text-yellow-400 hover:underline">Jmdelacruz181@yahoo.com</a></p>
+    <a href="#top" class="btn-animate mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition">Back to Top</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>© 2025 John Michael Dela Cruz | Built with ❤️</p>
+  </footer>
+
+</body>
+</html>
+```
