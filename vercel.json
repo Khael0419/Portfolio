@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "public": true,
   "builds": [
-    { "src": "portfolio/index.html", "use": "@vercel/static" }
+    { "src": "portfolio/index.html", "use": "@vercel/static" },
+    { "src": "portfolio/assets/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/assets/(.*)", "dest": "portfolio/assets/$1" },
